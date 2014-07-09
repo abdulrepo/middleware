@@ -4,7 +4,7 @@
   <title><![CDATA[Application Integration With IBM ESB]]></title>
   <link href="http://abdulrepo.github.io/middleware/atom.xml" rel="self"/>
   <link href="http://abdulrepo.github.io/middleware/"/>
-  <updated>2014-07-08T23:01:42-04:00</updated>
+  <updated>2014-07-08T23:06:58-04:00</updated>
   <id>http://abdulrepo.github.io/middleware/</id>
   <author>
     <name><![CDATA[Abdul @ Middleware]]></name>
@@ -19,8 +19,6 @@
     <updated>2014-07-08T22:35:12-04:00</updated>
     <id>http://abdulrepo.github.io/middleware/blog/2014/07/08/basics-of-message-broker-toolkit</id>
     <content type="html"><![CDATA[<p><img src="https://s3.amazonaws.com/abjoy/pictures/mypictures/wmbtoolkit.jpeg" width="800" height="1200"></p>
-
-<p><img class="left" src="http://placekitten.com/320/250" title="Place Kitten #2" ></p>
 ]]></content>
   </entry>
   
