@@ -4,7 +4,7 @@
   <title><![CDATA[Application Integration With IBM ESB]]></title>
   <link href="http://abdulrepo.github.io/middleware/atom.xml" rel="self"/>
   <link href="http://abdulrepo.github.io/middleware/"/>
-  <updated>2014-07-09T18:20:21-04:00</updated>
+  <updated>2014-07-09T18:42:23-04:00</updated>
   <id>http://abdulrepo.github.io/middleware/</id>
   <author>
     <name><![CDATA[Abdul @ Middleware]]></name>
@@ -12,6 +12,15 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Physical vs Logical Message]]></title>
+    <link href="http://abdulrepo.github.io/middleware/blog/2014/07/09/physical-vs-logical-message/"/>
+    <updated>2014-07-09T18:42:06-04:00</updated>
+    <id>http://abdulrepo.github.io/middleware/blog/2014/07/09/physical-vs-logical-message</id>
+    <content type="html"><![CDATA[
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Basics of Message Broker Toolkit]]></title>
