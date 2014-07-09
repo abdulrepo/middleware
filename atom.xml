@@ -4,7 +4,7 @@
   <title><![CDATA[Application Integration With IBM ESB]]></title>
   <link href="http://abdulrepo.github.io/middleware/atom.xml" rel="self"/>
   <link href="http://abdulrepo.github.io/middleware/"/>
-  <updated>2014-07-08T21:46:56-04:00</updated>
+  <updated>2014-07-08T22:35:23-04:00</updated>
   <id>http://abdulrepo.github.io/middleware/</id>
   <author>
     <name><![CDATA[Abdul @ Middleware]]></name>
@@ -12,6 +12,15 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Basics of Message Broker Toolkit]]></title>
+    <link href="http://abdulrepo.github.io/middleware/blog/2014/07/08/basics-of-message-broker-toolkit/"/>
+    <updated>2014-07-08T22:35:12-04:00</updated>
+    <id>http://abdulrepo.github.io/middleware/blog/2014/07/08/basics-of-message-broker-toolkit</id>
+    <content type="html"><![CDATA[
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[ESQL Tips &amp; Tricks]]></title>
