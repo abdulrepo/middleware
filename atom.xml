@@ -4,7 +4,7 @@
   <title><![CDATA[Application Integration With IBM ESB]]></title>
   <link href="http://abdulrepo.github.io/middleware/atom.xml" rel="self"/>
   <link href="http://abdulrepo.github.io/middleware/"/>
-  <updated>2014-07-08T23:09:43-04:00</updated>
+  <updated>2014-07-08T23:14:23-04:00</updated>
   <id>http://abdulrepo.github.io/middleware/</id>
   <author>
     <name><![CDATA[Abdul @ Middleware]]></name>
@@ -21,7 +21,11 @@
     <content type="html"><![CDATA[<p><img src="https://s3.amazonaws.com/abjoy/pictures/mypictures/wmbtoolkit.jpeg" width="800" height="1200"></p>
 
 <ol>
-<li>this is the side pane: in this pane we can create application, message flow, BAR files, message model, message set and etc</li>
+<li><p>This is the side pane: in this pane we can create application, message flow, BAR files, message model, message set and etc</p></li>
+<li><p>Is a section of the toolkit where we can choose different types of nodes to create message flow. for example, compute node, database node, filter node and etc.</p></li>
+<li><p>Content pane: in this pane we build our message flow using nodes links and etc.</p></li>
+<li><p>This pane contains one or more Broker instances, and one or more execution group.</p></li>
+<li><p>In this pane we can set properties for the nodes, we can brows deployment logs and see some troubleshooting informations.</p></li>
 </ol>
 
 ]]></content>
