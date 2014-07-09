@@ -1,4 +1,0 @@
-User-agent: *
-Disallow: 
-
-Sitemap: http://abdulrepo.github.io/middleware/sitemap.xml 
