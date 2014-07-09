@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Wmb | Application Integration With IBM ESB]]></title>
   <link href="http://abdulrepo.github.io/middleware/blog/categories/wmb/atom.xml" rel="self"/>
   <link href="http://abdulrepo.github.io/middleware/"/>
-  <updated>2014-07-09T19:25:11-04:00</updated>
+  <updated>2014-07-09T19:28:32-04:00</updated>
   <id>http://abdulrepo.github.io/middleware/</id>
   <author>
     <name><![CDATA[Abdul @ Middleware]]></name>
@@ -24,13 +24,13 @@
 
 <p>In our example the physical data is xml file which has account information with persons first and last name. and the parser is XMLNSC configure on input queue node. then internally we can retrieve information starting by XMLNSC.Account.fname etc.</p>
 
-<p>``` [language] [title] [url] [link text] [linenos:false] [start:#] [mark:#,#&ndash;#]</p>
+<!-- 
 
-<pre><code>    SET OutputRoot.XMLNSC.accountInfo.firstname = InputRoot.XMLNSC.account.fname;
-    SET OutputRoot.XMLNSC.accountInfo.lastname = InputRoot.XMLNSC.account.lname;
-</code></pre>
+``` [language] [title] [url] [link text] [linenos:false] [start:#] [mark:#,#-#]
+        SET OutputRoot.XMLNSC.accountInfo.firstname = InputRoot.XMLNSC.account.fname;
+        SET OutputRoot.XMLNSC.accountInfo.lastname = InputRoot.XMLNSC.account.lname;
+``` -->
 
-<p>```</p>
 ]]></content>
   </entry>
   
