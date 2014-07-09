@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Wmb | Application Integration With IBM ESB]]></title>
   <link href="http://abdulrepo.github.io/middleware/blog/categories/wmb/atom.xml" rel="self"/>
   <link href="http://abdulrepo.github.io/middleware/"/>
-  <updated>2014-07-09T18:50:19-04:00</updated>
+  <updated>2014-07-09T18:52:28-04:00</updated>
   <id>http://abdulrepo.github.io/middleware/</id>
   <author>
     <name><![CDATA[Abdul @ Middleware]]></name>
@@ -20,6 +20,8 @@
     <id>http://abdulrepo.github.io/middleware/blog/2014/07/09/physical-vs-logical-message</id>
     <content type="html"><![CDATA[<p>The difference between physical message and logical message is that physical message is something like XML and Cobol Copy book or any text files. when physical data arrives at input node for example, input message queue, we need to configure the node properpert with appropriate parser like XMLNSC. This parser converts physical data to logical data which is understandable by the enterior nodes or embeded languages ESQL &amp; JAVA. Then these language can traverse logical tree message and do transformation if needed.</p>
 
+<p>{% <a href="https://s3.amazonaws.com/abjoy/pictures/mypictures/photo1.jpg">https://s3.amazonaws.com/abjoy/pictures/mypictures/photo1.jpg</a> 800 1200 %}</p>
+
 <p>In our example the physical data is xml file which has account information with persons first and last name. and the parser is XMLNSC configure on input queue node. then internally we can retrieve information starting by XMLNSC.Account.fname etc.</p>
 ]]></content>
   </entry>
@@ -29,7 +31,7 @@
     <link href="http://abdulrepo.github.io/middleware/blog/2014/07/08/basics-of-message-broker-toolkit/"/>
     <updated>2014-07-08T22:35:12-04:00</updated>
     <id>http://abdulrepo.github.io/middleware/blog/2014/07/08/basics-of-message-broker-toolkit</id>
-    <content type="html"><![CDATA[<p><img class="<a" src="href="https://s3.amazonaws.com/abjoy/pictures/mypictures/wmbtoolkit.jpeg">https://s3.amazonaws.com/abjoy/pictures/mypictures/wmbtoolkit.jpeg</a>" width="800" height="1200"></p>
+    <content type="html"><![CDATA[<p>{% img <a href="https://s3.amazonaws.com/abjoy/pictures/mypictures/wmbtoolkit.jpeg">https://s3.amazonaws.com/abjoy/pictures/mypictures/wmbtoolkit.jpeg</a> 800 1200 %}</p>
 
 <ol>
 <li><p>This is the side pane: in this pane we can create application, message flow, BAR files, message model, message set and etc</p></li>
