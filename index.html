@@ -9,8 +9,7 @@
   <meta name="author" content="Abdul @ Middleware">
 
   
-  <meta name="description" content="
-">
+  <meta name="description" content="The difference between physical message and logical message is that physical message is something like XML and Cobol Copy book or any text files. &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -93,7 +92,9 @@
   </header>
 
 
-  <div class="entry-content">
+  <div class="entry-content"><p>The difference between physical message and logical message is that physical message is something like XML and Cobol Copy book or any text files. when physical data arrives at input node for example, input message queue, we need to configure the node properpert with appropriate parser like XMLNSC. This parser converts physical data to logical data which is understandable by the enterior nodes or embeded languages ESQL &amp; JAVA. Then these language can traverse logical tree message and do transformation if needed.</p>
+
+<p>In our example the physical data is xml file which has account information with persons first and last name. and the parser is XMLNSC configure on input queue node. then internally we can retrieve information starting by XMLNSC.Account.fname etc.</p>
 </div>
   
   
