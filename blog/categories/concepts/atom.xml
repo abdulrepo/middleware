@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Concepts | Application Integration With IBM ESB]]></title>
   <link href="http://abdulrepo.github.io/middleware/blog/categories/concepts/atom.xml" rel="self"/>
   <link href="http://abdulrepo.github.io/middleware/"/>
-  <updated>2014-07-09T19:31:48-04:00</updated>
+  <updated>2014-07-09T19:34:32-04:00</updated>
   <id>http://abdulrepo.github.io/middleware/</id>
   <author>
     <name><![CDATA[Abdul @ Middleware]]></name>
@@ -23,6 +23,9 @@
 <p><img class="<a" src="href="https://s3.amazonaws.com/abjoy/pictures/mypictures/photo1.jpg">https://s3.amazonaws.com/abjoy/pictures/mypictures/photo1.jpg</a>" width="800" height="1200"></p>
 
 <p>In our example the physical data is xml file which has account information with persons first and last name. and the parser is XMLNSC configure on input queue node. then internally we can retrieve information starting by XMLNSC.Account.fname etc.</p>
+
+<script type="text/javascript" src="http://jd.revolvermaps.com/2/1.js?i=3z586qymn9e&amp;s=220&amp;m=0&amp;v=false&amp;r=false&amp;b=000000&amp;n=false&amp;c=ff0000" async="async"></script>
+
 ]]></content>
   </entry>
   
