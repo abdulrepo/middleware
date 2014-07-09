@@ -4,7 +4,7 @@
   <title><![CDATA[Application Integration With IBM ESB]]></title>
   <link href="http://abdulrepo.github.io/middleware/atom.xml" rel="self"/>
   <link href="http://abdulrepo.github.io/middleware/"/>
-  <updated>2014-07-08T23:35:42-04:00</updated>
+  <updated>2014-07-08T23:36:19-04:00</updated>
   <id>http://abdulrepo.github.io/middleware/</id>
   <author>
     <name><![CDATA[Abdul @ Middleware]]></name>
@@ -25,7 +25,7 @@
 <li><p>Is a section of the toolkit where we can choose different types of nodes to create message flow. for example, compute node, database node, filter node and etc.</p></li>
 <li><p>Content pane: in this pane we build our message flow using nodes links and etc.</p></li>
 <li><p>This pane contains one or more Broker instances, and one or more execution group.</p></li>
-<li><p>In this pane we can set properties for the nodes, we can brows deployment logs and see some troubleshooting informations.</p></li>
+<li><p>In this pane we can set properties for the nodes, we can brows deployment logs and see some troubleshooting informations. test</p></li>
 </ol>
 
 ]]></content>
