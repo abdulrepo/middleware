@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Wmb | Application Integration With IBM ESB]]></title>
   <link href="http://abdulrepo.github.io/middleware/blog/categories/wmb/atom.xml" rel="self"/>
   <link href="http://abdulrepo.github.io/middleware/"/>
-  <updated>2014-07-09T20:59:34-04:00</updated>
+  <updated>2014-07-09T21:03:29-04:00</updated>
   <id>http://abdulrepo.github.io/middleware/</id>
   <author>
     <name><![CDATA[Abdul @ Middleware]]></name>
@@ -23,10 +23,6 @@
 <p><img class="<a" src="href="https://s3.amazonaws.com/abjoy/pictures/mypictures/photo1.jpg">https://s3.amazonaws.com/abjoy/pictures/mypictures/photo1.jpg</a>" width="800" height="1200"></p>
 
 <p>In our example the physical data is xml file which has account information with persons first and last name. and the parser is XMLNSC configure on input queue node. then internally we can retrieve information starting by XMLNSC.Account.fname etc.</p>
-
-<p><img class="<a" src="href="https://s3.amazonaws.com/abjoy/pictures/mypictures/pysical_vs_logical/pic4.jpeg">https://s3.amazonaws.com/abjoy/pictures/mypictures/pysical_vs_logical/pic4.jpeg</a>" width="800" height="1200"></p>
-
-<p><img class="<a" src="href="https://s3.amazonaws.com/abjoy/pictures/mypictures/pysical_vs_logical/pic1.jpeg">https://s3.amazonaws.com/abjoy/pictures/mypictures/pysical_vs_logical/pic1.jpeg</a>" width="800" height="1200"></p>
 
 <p><img class="<a" src="href="https://s3.amazonaws.com/abjoy/pictures/mypictures/pysical_vs_logical/pic2.jpeg">https://s3.amazonaws.com/abjoy/pictures/mypictures/pysical_vs_logical/pic2.jpeg</a>" width="800" height="1200"></p>
 
