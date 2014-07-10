@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Toolkit | Application Integration With IBM ESB]]></title>
   <link href="http://abdulrepo.github.io/middleware/blog/categories/toolkit/atom.xml" rel="self"/>
   <link href="http://abdulrepo.github.io/middleware/"/>
-  <updated>2014-07-09T20:07:35-04:00</updated>
+  <updated>2014-07-09T20:12:08-04:00</updated>
   <id>http://abdulrepo.github.io/middleware/</id>
   <author>
     <name><![CDATA[Abdul @ Middleware]]></name>
@@ -18,7 +18,7 @@
     <link href="http://abdulrepo.github.io/middleware/blog/2014/07/08/basics-of-message-broker-toolkit/"/>
     <updated>2014-07-08T22:35:12-04:00</updated>
     <id>http://abdulrepo.github.io/middleware/blog/2014/07/08/basics-of-message-broker-toolkit</id>
-    <content type="html"><![CDATA[<p>{% img <a href="https://s3.amazonaws.com/abjoy/pictures/mypictures/wmbtoolkit.jpeg">https://s3.amazonaws.com/abjoy/pictures/mypictures/wmbtoolkit.jpeg</a> 800 1200 %}</p>
+    <content type="html"><![CDATA[<p><img class="<a" src="href="https://s3.amazonaws.com/abjoy/pictures/mypictures/wmbtoolkit.jpeg">https://s3.amazonaws.com/abjoy/pictures/mypictures/wmbtoolkit.jpeg</a>" width="800" height="1200"></p>
 
 <ol>
 <li><p>This is the side pane: in this pane we can create application, message flow, BAR files, message model, message set and etc</p></li>
