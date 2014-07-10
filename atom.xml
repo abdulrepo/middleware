@@ -4,7 +4,7 @@
   <title><![CDATA[Application Integration With IBM ESB]]></title>
   <link href="http://abdulrepo.github.io/middleware/atom.xml" rel="self"/>
   <link href="http://abdulrepo.github.io/middleware/"/>
-  <updated>2014-07-09T21:43:22-04:00</updated>
+  <updated>2014-07-09T23:18:46-04:00</updated>
   <id>http://abdulrepo.github.io/middleware/</id>
   <author>
     <name><![CDATA[Abdul @ Middleware]]></name>
@@ -18,11 +18,11 @@
     <link href="http://abdulrepo.github.io/middleware/blog/2014/07/09/physical-vs-logical-message/"/>
     <updated>2014-07-09T18:42:06-04:00</updated>
     <id>http://abdulrepo.github.io/middleware/blog/2014/07/09/physical-vs-logical-message</id>
-    <content type="html"><![CDATA[<p>The difference between physical message and logical message is that physical message is something like XML and Cobol Copy book or any text files. when physical data arrives at input node for example, input message queue, we need to configure the node property with appropriate parser like XMLNSC. This parser converts physical data to logical data which is understandable by the enterior nodes or embeded languages ESQL &amp; JAVA. Then these language can traverse logical tree message and do transformation as needed.</p>
+    <content type="html"><![CDATA[<p>The difference between physical message and logical message is that physical message is something like XML and Cobol copybook or any text files. when physical data arrives at input node for example, input message queue, we have to configure the node property with appropriate parser like XMLNSC. This parser converts physical data to logical data which is understandable by the enterior nodes or embeded languages ESQL &amp; JAVA. Then these language can traverse logical tree message and do transformation as needed.</p>
 
 <p><img src="https://s3.amazonaws.com/abjoy/pictures/mypictures/photo1.jpg" width="800" height="1200"></p>
 
-<p>In our example the physical data is xml file which has account information with persons first and last name. and the parser is XMLNSC configure on input queue node. then internally we can retrieve information starting by XMLNSC.Account.fname etc.</p>
+<p>In our example the physical data is xml file which has account information with person first and last name. and the parser is XMLNSC configured on input queue node. then internally we can retrieve information starting by XMLNSC.Account.fname etc.</p>
 
 <p>This project shows how to transform simple account information to a physical message but with different nodes.</p>
 
