@@ -4,7 +4,7 @@
   <title><![CDATA[Application Integration With IBM ESB]]></title>
   <link href="http://abdulrepo.github.io/middleware/atom.xml" rel="self"/>
   <link href="http://abdulrepo.github.io/middleware/"/>
-  <updated>2014-07-09T20:16:18-04:00</updated>
+  <updated>2014-07-09T20:31:26-04:00</updated>
   <id>http://abdulrepo.github.io/middleware/</id>
   <author>
     <name><![CDATA[Abdul @ Middleware]]></name>
@@ -47,6 +47,9 @@
 <li><p>This pane contains one or more Broker instances, and one or more execution group.</p></li>
 <li><p>In this pane we can set properties for the nodes, we can brows deployment logs and see some troubleshooting informations. test</p></li>
 </ol>
+
+
+<script type="text/javascript" src="http://jd.revolvermaps.com/2/4.js?i=30hgo6osd91&amp;m=0&amp;h=160&amp;c=ff00ff&amp;r=40" async="async"></script>
 
 ]]></content>
   </entry>
