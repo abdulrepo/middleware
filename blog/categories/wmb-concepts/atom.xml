@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: Concepts | Application Integration With IBM ESB]]></title>
-  <link href="http://abdulrepo.github.io/middleware/blog/categories/concepts/atom.xml" rel="self"/>
+  <title><![CDATA[Category: Wmb_concepts | Application Integration With IBM ESB]]></title>
+  <link href="http://abdulrepo.github.io/middleware/blog/categories/wmb-concepts/atom.xml" rel="self"/>
   <link href="http://abdulrepo.github.io/middleware/"/>
-  <updated>2014-07-09T21:04:24-04:00</updated>
+  <updated>2014-07-09T21:05:46-04:00</updated>
   <id>http://abdulrepo.github.io/middleware/</id>
   <author>
     <name><![CDATA[Abdul @ Middleware]]></name>
