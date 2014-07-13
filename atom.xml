@@ -4,7 +4,7 @@
   <title><![CDATA[Application Integration With IBM ESB]]></title>
   <link href="http://abdulrepo.github.io/middleware/atom.xml" rel="self"/>
   <link href="http://abdulrepo.github.io/middleware/"/>
-  <updated>2014-07-10T23:16:55-04:00</updated>
+  <updated>2014-07-13T15:16:05-04:00</updated>
   <id>http://abdulrepo.github.io/middleware/</id>
   <author>
     <name><![CDATA[Abdul @ Middleware]]></name>
@@ -12,6 +12,17 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Working With EmailOutput Node]]></title>
+    <link href="http://abdulrepo.github.io/middleware/blog/2014/07/13/working-with-emailoutput-node/"/>
+    <updated>2014-07-13T14:58:51-04:00</updated>
+    <id>http://abdulrepo.github.io/middleware/blog/2014/07/13/working-with-emailoutput-node</id>
+    <content type="html"><![CDATA[<p>We start this serious of discussion starting with SMTP server. we use SMTP server is a type of server which is used to relay or send email message to the next or final destination SMTP server. so basically, it accepts email message from client application and sends to the next hop or remote end SMTP server, which finally the reciver consumes the message from.</p>
+
+<p>To enhance rapid wmb devevelpment I&rsquo;ve introduced here pseodo SMTP server. this server is used as local queue where we can browse sent email message by email node internally. and it woudn&rsquo;t send message to actual destination.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Physical vs Logical Message]]></title>
