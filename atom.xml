@@ -4,7 +4,7 @@
   <title><![CDATA[Application Integration With IBM ESB]]></title>
   <link href="http://abdulrepo.github.io/middleware/atom.xml" rel="self"/>
   <link href="http://abdulrepo.github.io/middleware/"/>
-  <updated>2014-07-13T16:15:56-04:00</updated>
+  <updated>2014-07-13T16:18:23-04:00</updated>
   <id>http://abdulrepo.github.io/middleware/</id>
   <author>
     <name><![CDATA[Abdul @ Middleware]]></name>
@@ -22,7 +22,7 @@
 
 <p>To enhance rapid wmb devevelpment I&rsquo;ve introduced here pseodo SMTP server. this server is used as local message browser using local queue where we can browse email sent by email node or any application. and it woudn&rsquo;t send message to actual destination.</p>
 
-<p>To see this in action download tiny SMTP server application available at: <a href="http://smtp4dev.codeplex.com/downloads/get/269147.">http://smtp4dev.codeplex.com/downloads/get/269147.</a> and run it.
+<p>To see this in action download tiny SMTP server application available at: <a href="http://smtp4dev.codeplex.com/downloads/get/269147">download app here</a> and run it.
 Then configure emailoutput node as marked in blue color below:</p>
 
 <p><img src="https://s3.amazonaws.com/abjoy/wmb/emailoutputnode_static_configuration/pic1.jpeg" width="800" height="1200"></p>
