@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Working With EmailOutput Node - Application Integration With IBM ESB</title>
+  <title>Working With EmailOutput Node Static Configuration - Application Integration With IBM ESB</title>
   <meta name="author" content="Abdul @ Middleware">
 
   
-  <meta name="description" content="We start this serious of discussion starting with SMTP server. we use SMTP server is a type of server which is used to relay or send email message to &hellip;">
+  <meta name="description" content="We start this serious of discussion starting with SMTP server. SMTP server is a type of server which is used to relay or send email message to the &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://abdulrepo.github.io/middleware/blog/2014/07/13/working-with-emailoutput-node">
+  <link rel="canonical" href="http://abdulrepo.github.io/middleware/blog/2014/07/13/working-with-emailoutput-node-static-configuration">
   <link href="/middleware/favicon.png" rel="icon">
   <link href="/middleware/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/middleware/atom.xml" rel="alternate" title="Application Integration With IBM ESB" type="application/atom+xml">
@@ -66,7 +66,7 @@
   
   <header>
     
-      <h1 class="entry-title">Working With EmailOutput Node</h1>
+      <h1 class="entry-title">Working With EmailOutput Node Static Configuration</h1>
     
     
       <p class="meta">
@@ -82,7 +82,7 @@
   
 
 
-<time datetime="2014-07-13T14:58:51-04:00" pubdate data-updated="true">Jul 13<sup>th</sup>, 2014</time>
+<time datetime="2014-07-13T15:36:04-04:00" pubdate data-updated="true">Jul 13<sup>th</sup>, 2014</time>
         
            | <a href="#disqus_thread"
              data-disqus-identifier="http://abdulrepo.github.io/middleware">Comments</a>
@@ -92,9 +92,28 @@
   </header>
 
 
-<div class="entry-content"><p>We start this serious of discussion starting with SMTP server. we use SMTP server is a type of server which is used to relay or send email message to the next or final destination SMTP server. so basically, it accepts email message from client application and sends to the next hop or remote end SMTP server, which finally the reciver consumes the message from.</p>
+<div class="entry-content"><p>We start this serious of discussion starting with SMTP server. SMTP server is a type of server which is used to relay or send email message to the next or final destination SMTP server. so basically, it accepts email message from client application for example from outlook express or simply throuh telnet and sends to the next hop or remote end SMTP server, which finally the reciver consumes the message from.</p>
 
-<p>To enhance rapid wmb devevelpment I&rsquo;ve introduced here pseodo SMTP server. this server is used as local queue where we can browse sent email message by email node internally. and it woudn&rsquo;t send message to actual destination.</p>
+<p>To enhance rapid wmb devevelpment I&rsquo;ve introduced here pseodo SMTP server. this server is used as local message browser using local queue where we can browse email sent by email node or any application. and it woudn&rsquo;t send message to actual destination.</p>
+
+<p>To see this in action download tiny SMTP server application available at: <a href="http://smtp4dev.codeplex.com/downloads/get/269147.">http://smtp4dev.codeplex.com/downloads/get/269147.</a> and run it.
+Then configure emailoutput node as marked in blue color below:</p>
+
+<p><img src="https://s3.amazonaws.com/abjoy/wmb/emailoutputnode_static_configuration/pic1.jpeg" width="800" height="1200"></p>
+
+<p><img src="https://s3.amazonaws.com/abjoy/wmb/emailoutputnode_static_configuration/pic2.jpeg" width="800" height="1200"></p>
+
+<p>upon deploying the project and excuting the project, since input message tag is not properly close, the test should fail and sends email notification to subscribed admins in the local pseudo queues show below:</p>
+
+<p><img src="https://s3.amazonaws.com/abjoy/wmb/emailoutputnode_static_configuration/pic3.jpeg" width="800" height="1200"></p>
+
+<p><img src="https://s3.amazonaws.com/abjoy/wmb/emailoutputnode_static_configuration/pic4.jpeg" width="800" height="1200"></p>
+
+<p><img src="https://s3.amazonaws.com/abjoy/wmb/emailoutputnode_static_configuration/pic5.jpeg" width="800" height="1200"></p>
+
+<p>click inspect button to see the message</p>
+
+<p><img src="https://s3.amazonaws.com/abjoy/wmb/emailoutputnode_static_configuration/pic6.jpeg" width="800" height="1200"></p>
 </div>
 
 
@@ -117,21 +136,15 @@
   
 
 
-<time datetime="2014-07-13T14:58:51-04:00" pubdate data-updated="true">Jul 13<sup>th</sup>, 2014</time>
+<time datetime="2014-07-13T15:36:04-04:00" pubdate data-updated="true">Jul 13<sup>th</sup>, 2014</time>
       
-
-<span class="categories">
-  
-    <a class='category' href='/middleware/blog/categories/nodes/'>nodes</a>, <a class='category' href='/middleware/blog/categories/wmb/'>wmb</a>
-  
-</span>
 
 
     </p>
     
       <div class="sharing">
   
-  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://abdulrepo.github.io/middleware/blog/2014/07/13/working-with-emailoutput-node/" data-via="" data-counturl="http://abdulrepo.github.io/middleware/blog/2014/07/13/working-with-emailoutput-node/" >Tweet</a>
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://abdulrepo.github.io/middleware/blog/2014/07/13/working-with-emailoutput-node-static-configuration/" data-via="" data-counturl="http://abdulrepo.github.io/middleware/blog/2014/07/13/working-with-emailoutput-node-static-configuration/" >Tweet</a>
   
   
   
@@ -164,7 +177,7 @@
   <ul id="recent_posts">
     
       <li class="post">
-        <a href="/middleware/blog/2014/07/13/working-with-emailoutput-node/">Working With EmailOutput Node</a>
+        <a href="/middleware/blog/2014/07/13/working-with-emailoutput-node-static-configuration/">Working With EmailOutput Node Static Configuration</a>
       </li>
     
       <li class="post">
@@ -205,8 +218,8 @@
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://abdulrepo.github.io/middleware/blog/2014/07/13/working-with-emailoutput-node/';
-        var disqus_url = 'http://abdulrepo.github.io/middleware/blog/2014/07/13/working-with-emailoutput-node/';
+        var disqus_identifier = 'http://abdulrepo.github.io/middleware/blog/2014/07/13/working-with-emailoutput-node-static-configuration/';
+        var disqus_url = 'http://abdulrepo.github.io/middleware/blog/2014/07/13/working-with-emailoutput-node-static-configuration/';
         var disqus_script = 'embed.js';
       
     (function () {
