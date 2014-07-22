@@ -4,7 +4,7 @@
   <title><![CDATA[Application Integration With IBM ESB]]></title>
   <link href="http://abdulrepo.github.io/middleware/atom.xml" rel="self"/>
   <link href="http://abdulrepo.github.io/middleware/"/>
-  <updated>2014-07-22T14:03:55-04:00</updated>
+  <updated>2014-07-22T14:32:59-04:00</updated>
   <id>http://abdulrepo.github.io/middleware/</id>
   <author>
     <name><![CDATA[Abdul @ Middleware]]></name>
@@ -18,7 +18,7 @@
     <link href="http://abdulrepo.github.io/middleware/blog/2014/07/22/soap-node-vs-http-node/"/>
     <updated>2014-07-22T13:51:00-04:00</updated>
     <id>http://abdulrepo.github.io/middleware/blog/2014/07/22/soap-node-vs-http-node</id>
-    <content type="html"><![CDATA[<p>We can use SOAP nodes with SOAP message domain OR HTTP transport nodes with XMLNSC message domain to implement Web Services. Several advantages exist if we use SOAP nodes :</p>
+    <content type="html"><![CDATA[<p>We can use SOAP nodes with SOAP message domain OR HTTP transport nodes with XMLNSC message domain to implement Web Services. Several advantages exist if we use SOAP nodes:</p>
 
 <pre><code> * Support for WS-Addressing, WS-Security and SOAP headers.
  * A common SOAP logical tree format, independent of the bitstream format.
