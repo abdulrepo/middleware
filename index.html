@@ -97,15 +97,14 @@
 
   <div class="entry-content"><p>We can use SOAP nodes with SOAP message domain OR HTTP transport nodes with XMLNSC message domain to implement Web Services. Several advantages exist if we use SOAP nodes :</p>
 
-<p> Support for WS-Addressing, WS-Security and SOAP headers.</p>
+<ul>
+<li><p>Support for WS-Addressing, WS-Security and SOAP headers.</p></li>
+<li><p>A common SOAP logical tree format, independent of the bitstream format.</p></li>
+<li><p>Runtime checking against WSDL.</p></li>
+<li><p>Automatic processing of SOAP with Attachments (SwA). (Although the HTTP nodes can process SwA messages, we must use the MIME message domain)</p></li>
+<li><p>Automatic processing of Message Transmission Optimization Mechanism (MTOM).</p></li>
+</ul>
 
-<p> A common SOAP logical tree format, independent of the bitstream format.</p>
-
-<p> Runtime checking against WSDL.</p>
-
-<p> Automatic processing of SOAP with Attachments (SwA). (Although the HTTP nodes can process SwA messages, we must use the MIME message domain)</p>
-
-<p> Automatic processing of Message Transmission Optimization Mechanism (MTOM).</p>
 
 <p>Cases where it might be better to use HTTP nodes include:
  Message flows that interact with Web services that use different standards, such as REST or XML-RPC. (We don&rsquo;t have a WSDL definition)
