@@ -4,7 +4,7 @@
   <title><![CDATA[Application Integration With IBM ESB]]></title>
   <link href="http://abdulrepo.github.io/middleware/atom.xml" rel="self"/>
   <link href="http://abdulrepo.github.io/middleware/"/>
-  <updated>2014-07-22T14:32:59-04:00</updated>
+  <updated>2014-07-22T14:36:13-04:00</updated>
   <id>http://abdulrepo.github.io/middleware/</id>
   <author>
     <name><![CDATA[Abdul @ Middleware]]></name>
@@ -20,18 +20,22 @@
     <id>http://abdulrepo.github.io/middleware/blog/2014/07/22/soap-node-vs-http-node</id>
     <content type="html"><![CDATA[<p>We can use SOAP nodes with SOAP message domain OR HTTP transport nodes with XMLNSC message domain to implement Web Services. Several advantages exist if we use SOAP nodes:</p>
 
-<pre><code> * Support for WS-Addressing, WS-Security and SOAP headers.
- * A common SOAP logical tree format, independent of the bitstream format.
- * Runtime checking against WSDL.
- * Automatic processing of SOAP with Attachments (SwA). (Although the HTTP nodes can process SwA messages, we must use the MIME message domain)
- * Automatic processing of Message Transmission Optimization Mechanism (MTOM).
-</code></pre>
+<ul>
+<li>Support for WS-Addressing, WS-Security and SOAP headers.</li>
+<li>A common SOAP logical tree format, independent of the bitstream format.</li>
+<li>Runtime checking against WSDL.</li>
+<li>Automatic processing of SOAP with Attachments (SwA). (Although the HTTP nodes can process SwA messages, we must use the MIME message domain)</li>
+<li>Automatic processing of Message Transmission Optimization Mechanism (MTOM).</li>
+</ul>
+
 
 <p>Cases where it might be better to use HTTP nodes include:</p>
 
-<pre><code> * Message flows that interact with Web services that use different standards, such as REST or XML-RPC. (We don't have a WSDL definition)
- * Message flow that never use WS-Addressing, WS-Security, SwA, or MTOM.
-</code></pre>
+<ul>
+<li>Message flows that interact with Web services that use different standards, such as REST or XML-RPC. (We don&rsquo;t have a WSDL definition)</li>
+<li>Message flow that never use WS-Addressing, WS-Security, SwA, or MTOM.</li>
+</ul>
+
 ]]></content>
   </entry>
   
