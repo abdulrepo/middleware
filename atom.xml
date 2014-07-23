@@ -4,7 +4,7 @@
   <title><![CDATA[Application Integration With IBM ESB]]></title>
   <link href="http://abdulrepo.github.io/middleware/atom.xml" rel="self"/>
   <link href="http://abdulrepo.github.io/middleware/"/>
-  <updated>2014-07-23T01:46:46-04:00</updated>
+  <updated>2014-07-23T02:04:37-04:00</updated>
   <id>http://abdulrepo.github.io/middleware/</id>
   <author>
     <name><![CDATA[Abdul @ Middleware]]></name>
@@ -18,17 +18,30 @@
     <link href="http://abdulrepo.github.io/middleware/blog/2014/07/23/webservice-develpment-using-http-node/"/>
     <updated>2014-07-23T01:16:13-04:00</updated>
     <id>http://abdulrepo.github.io/middleware/blog/2014/07/23/webservice-develpment-using-http-node</id>
-    <content type="html"><![CDATA[<p>WebService Provider with HTTP Node</p>
+    <content type="html"><![CDATA[<p>WebService Provider with HTTP Input Node</p>
 
-<p>I&rsquo;ll try to show tedious webservice provider development using HTTP node. in this example I&rsquo;ve tried to expose webservice over SOAP protocol. since we&rsquo;ve to construct(write tedious codes) for multiple namespaces for the envelope and subsequent nodes, it&rsquo;s more prefered to use SOAP node which abstracts out these multiple lines of code and hence enables us to focus on business needs.</p>
+<p>I&rsquo;ll try to show tedious webservice provider development using HTTP node. in this example I&rsquo;ve tried to expose webservice over SOAP protocol. since we&rsquo;ve to construct(write tedious codes) for multiple namespaces for the envelope and subsequent nodes, it&rsquo;s more prefered to use SOAP node which abstracts out these multiple lines of code and hence enables us to focus on business needs. key note ! port number 7080 is the default for listening webservice request.</p>
+
+<p>as you can see, the lines of codes in compute node is tedious and we need to be careful when we write coding and it time consuming and develper will not be productive</p>
 
 <p><img src="https://s3.amazonaws.com/abjoy/wmb/http_webservice_node/pic1.jpeg" width="800" height="1200"></p>
 
+<p>WebService Consumer with HTTP Request Node</p>
+
+<p>This message flow doesn&rsquo;t do any fancy thing, it just connects to webservice provider above, consumes the data passes over to the compute node. and compute node copies inbound message to outbound terminal without any transformation.</p>
+
 <p><img src="https://s3.amazonaws.com/abjoy/wmb/http_webservice_node/pic2.jpeg" width="800" height="1200"></p>
+
+<p>Testing with SOAPUI</p>
+
+<p>In this example, bank customer tries to login into his bank account and sees his credit and debit information. the first data he enters: username, password are credentail data for webservice request. and detailed information; customer name, checking account and saving account are returned as webservice response data.</p>
 
 <p><img src="https://s3.amazonaws.com/abjoy/wmb/http_webservice_node/pic3.jpeg" width="800" height="1200"></p>
 
-<p>In this example, bank user tries to login into his bank account and sees his account information. the first data he enters: username, password are credentail for webservice request. and detailed information; customer name, checking account and saving account are returned as webservice response. key note ! port number 7080 is the default for listening webservice request.</p>
+<p><a href="https://s3.amazonaws.com/abjoy/wmb/emailoutputnode_static_configuration/static_emailoutput_node.zip">download source code</a></p>
+
+<script type="text/javascript" src="http://jd.revolvermaps.com/2/4.js?i=30hgo6osd91&amp;m=0&amp;h=160&amp;c=ff00ff&amp;r=40" async="async"></script>
+
 ]]></content>
   </entry>
   
@@ -86,7 +99,7 @@ Then configure emailoutput node as marked in blue color below:</p>
 
 <p><img src="https://s3.amazonaws.com/abjoy/wmb/emailoutputnode_static_configuration/pic6.jpeg" width="800" height="1200"></p>
 
-<p><a href="https://s3.amazonaws.com/abjoy/wmb/emailoutputnode_static_configuration/static_emailoutput_node.zip">download source code</a></p>
+<p><a href="https://s3.amazonaws.com/abjoy/wmb/http_webservice_node/HttpWebService.zip">download source code</a></p>
 
 <script type="text/javascript" src="http://jd.revolvermaps.com/2/4.js?i=30hgo6osd91&amp;m=0&amp;h=160&amp;c=ff00ff&amp;r=40" async="async"></script>
 
