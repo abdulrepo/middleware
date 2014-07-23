@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Webservice, | Application Integration With IBM ESB]]></title>
+  <link href="http://abdulrepo.github.io/middleware/blog/categories/webservice/atom.xml" rel="self"/>
+  <link href="http://abdulrepo.github.io/middleware/"/>
+  <updated>2014-07-23T01:46:46-04:00</updated>
+  <id>http://abdulrepo.github.io/middleware/</id>
+  <author>
+    <name><![CDATA[Abdul @ Middleware]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[WebService Develpment Using HTTP Node]]></title>
+    <link href="http://abdulrepo.github.io/middleware/blog/2014/07/23/webservice-develpment-using-http-node/"/>
+    <updated>2014-07-23T01:16:13-04:00</updated>
+    <id>http://abdulrepo.github.io/middleware/blog/2014/07/23/webservice-develpment-using-http-node</id>
+    <content type="html"><![CDATA[<p>WebService Provider with HTTP Node</p>
+
+<p>I&rsquo;ll try to show tedious webservice provider development using HTTP node. in this example I&rsquo;ve tried to expose webservice over SOAP protocol. since we&rsquo;ve to construct(write tedious codes) for multiple namespaces for the envelope and subsequent nodes, it&rsquo;s more prefered to use SOAP node which abstracts out these multiple lines of code and hence enables us to focus on business needs.</p>
+
+<p><img class="<a" src="href="https://s3.amazonaws.com/abjoy/wmb/http_webservice_node/pic1.jpeg">https://s3.amazonaws.com/abjoy/wmb/http_webservice_node/pic1.jpeg</a>" width="800" height="1200"></p>
+
+<p><img class="<a" src="href="https://s3.amazonaws.com/abjoy/wmb/http_webservice_node/pic2.jpeg">https://s3.amazonaws.com/abjoy/wmb/http_webservice_node/pic2.jpeg</a>" width="800" height="1200"></p>
+
+<p><img class="<a" src="href="https://s3.amazonaws.com/abjoy/wmb/http_webservice_node/pic3.jpeg">https://s3.amazonaws.com/abjoy/wmb/http_webservice_node/pic3.jpeg</a>" width="800" height="1200"></p>
+
+<p>In this example, bank user tries to login into his bank account and sees his account information. the first data he enters: username, password are credentail for webservice request. and detailed information; customer name, checking account and saving account are returned as webservice response. key note ! port number 7080 is the default for listening webservice request.</p>
+]]></content>
+  </entry>
+  
+</feed>
