@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Webservice, | Application Integration With IBM ESB]]></title>
   <link href="http://abdulrepo.github.io/middleware/blog/categories/webservice/atom.xml" rel="self"/>
   <link href="http://abdulrepo.github.io/middleware/"/>
-  <updated>2014-07-23T02:04:37-04:00</updated>
+  <updated>2014-07-23T11:10:44-04:00</updated>
   <id>http://abdulrepo.github.io/middleware/</id>
   <author>
     <name><![CDATA[Abdul @ Middleware]]></name>
@@ -20,9 +20,9 @@
     <id>http://abdulrepo.github.io/middleware/blog/2014/07/23/webservice-develpment-using-http-node</id>
     <content type="html"><![CDATA[<p>WebService Provider with HTTP Input Node</p>
 
-<p>I&rsquo;ll try to show tedious webservice provider development using HTTP node. in this example I&rsquo;ve tried to expose webservice over SOAP protocol. since we&rsquo;ve to construct(write tedious codes) for multiple namespaces for the envelope and subsequent nodes, it&rsquo;s more prefered to use SOAP node which abstracts out these multiple lines of code and hence enables us to focus on business needs. key note ! port number 7080 is the default for listening webservice request.</p>
+<p>I&rsquo;ll try to show webservice provider development using HTTP node. in this example I&rsquo;ve tried to expose webservice using HTTP node. since we&rsquo;ve to construct(write tedious codes) for multiple namespaces for the envelope and subsequent nodes, it&rsquo;s more prefered to use generate WSDL/XSD wizard to extract SOAP envelope. key note ! port number 7080 is the default for listening webservice request.</p>
 
-<p>as you can see, the lines of codes in compute node is tedious and we need to be careful when we write coding and it time consuming and develper will not be productive</p>
+<p>As you can see, the lines of codes in compute node is tedious and we need to be careful when we write coding</p>
 
 <p><img class="<a" src="href="https://s3.amazonaws.com/abjoy/wmb/http_webservice_node/pic1.jpeg">https://s3.amazonaws.com/abjoy/wmb/http_webservice_node/pic1.jpeg</a>" width="800" height="1200"></p>
 
