@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Httpnode | Application Integration With IBM ESB]]></title>
   <link href="http://abdulrepo.github.io/middleware/blog/categories/httpnode/atom.xml" rel="self"/>
   <link href="http://abdulrepo.github.io/middleware/"/>
-  <updated>2014-09-23T05:44:21-05:00</updated>
+  <updated>2014-09-23T05:45:56-05:00</updated>
   <id>http://abdulrepo.github.io/middleware/</id>
   <author>
     <name><![CDATA[Abdul @ Middleware]]></name>
@@ -24,19 +24,19 @@
 
 <p>As you can see, the lines of codes in compute node is tedious and we need to be careful when we write coding</p>
 
-<p>{% img <a href="https://s3.amazonaws.com/abjoy/wmb/http_webservice_node/pic1.jpeg">https://s3.amazonaws.com/abjoy/wmb/http_webservice_node/pic1.jpeg</a> 800 1200 %}</p>
+<p><img class="<a" src="href="https://s3.amazonaws.com/abjoy/wmb/http_webservice_node/pic1.jpeg">https://s3.amazonaws.com/abjoy/wmb/http_webservice_node/pic1.jpeg</a>" width="800" height="1200"></p>
 
 <p>WebService Consumer with HTTP Request Node</p>
 
 <p>This message flow doesn&rsquo;t do any fancy thing, it just connects to webservice provider above, consumes the data passes over to the compute node. and compute node copies inbound message to outbound terminal without any transformation.</p>
 
-<p>{% img <a href="https://s3.amazonaws.com/abjoy/wmb/http_webservice_node/pic2.jpeg">https://s3.amazonaws.com/abjoy/wmb/http_webservice_node/pic2.jpeg</a> 800 1200 %}</p>
+<p><img class="<a" src="href="https://s3.amazonaws.com/abjoy/wmb/http_webservice_node/pic2.jpeg">https://s3.amazonaws.com/abjoy/wmb/http_webservice_node/pic2.jpeg</a>" width="800" height="1200"></p>
 
 <p>Testing with SOAPUI</p>
 
 <p>In this example, bank customer tries to login into his bank account and sees his credit and debit information. the first data he enters: username, password are credentail data for webservice request. and detailed information; customer name, checking account and saving account are returned as webservice response data.</p>
 
-<p>{% img <a href="https://s3.amazonaws.com/abjoy/wmb/http_webservice_node/pic3.jpeg">https://s3.amazonaws.com/abjoy/wmb/http_webservice_node/pic3.jpeg</a> 800 1200 %}</p>
+<p><img class="<a" src="href="https://s3.amazonaws.com/abjoy/wmb/http_webservice_node/pic3.jpeg">https://s3.amazonaws.com/abjoy/wmb/http_webservice_node/pic3.jpeg</a>" width="800" height="1200"></p>
 
 <p><a href="https://s3.amazonaws.com/abjoy/wmb/emailoutputnode_static_configuration/static_emailoutput_node.zip">download source code</a></p>
 

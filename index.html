@@ -1,0 +1,555 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Application Integration With IBM ESB</title>
+  <meta name="author" content="Abdul @ Middleware">
+
+  
+  <meta name="description" content="Scenarios where to use pub-sub pattern * Where multiple receivers depend on same senders
+* Scnarios with large number of senders and receivers
+* &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://abdulrepo.github.io/middleware">
+  <link href="/middleware/favicon.png" rel="icon">
+  <link href="/middleware/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/middleware/atom.xml" rel="alternate" title="Application Integration With IBM ESB" type="application/atom+xml">
+  <script src="/middleware/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/middleware/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="//fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="//fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/middleware/">Application Integration With IBM ESB</a></h1>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/middleware/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="https://www.google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:abdulrepo.github.io/middleware" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/middleware/">Home</a></li>
+  <li><a href="/middleware/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div class="blog-index">
+  
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/middleware/blog/2014/09/23/pub-sub-pattern-in-message-broker/">PUB-SUB Pattern in Message Broker</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-09-23T05:19:42-05:00" pubdate data-updated="true">Sep 23<sup>rd</sup>, 2014</time>
+        
+           | <a href="/middleware/blog/2014/09/23/pub-sub-pattern-in-message-broker/#disqus_thread"
+             data-disqus-identifier="http://abdulrepo.github.io/middleware/blog/2014/09/23/pub-sub-pattern-in-message-broker/">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Scenarios where to use pub-sub pattern</p>
+
+<pre><code>* Where multiple receivers depend on same senders
+* Scnarios with large number of senders and receivers
+* Frequent and dynamic changes between senders and receivers
+</code></pre>
+
+<p>Components needed to build pub-sub flow</p>
+
+<p>Publisher flow: this consists of any input node with publisher string and &lsquo;Publisher&rsquo; keyword specified in transformation nodes or on MQ input node if MQ is an input node and publisher node</p>
+
+<p>Publisher and subscriber definition on MQ explorer</p>
+
+<p>Pubscriber flow with MQ input node which is a must have</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/middleware/blog/2014/07/23/webservice-develpment-using-http-node/">WebService Develpment Using HTTP Node</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-07-23T00:16:13-05:00" pubdate data-updated="true">Jul 23<sup>rd</sup>, 2014</time>
+        
+           | <a href="/middleware/blog/2014/07/23/webservice-develpment-using-http-node/#disqus_thread"
+             data-disqus-identifier="http://abdulrepo.github.io/middleware/blog/2014/07/23/webservice-develpment-using-http-node/">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>WebService Provider with HTTP Input Node</p>
+
+<p>I&rsquo;ll try to show webservice provider development using HTTP node. in this example I&rsquo;ve tried to expose webservice using HTTP node. since we&rsquo;ve to construct(write tedious codes) for multiple namespaces for the envelope and subsequent nodes, it&rsquo;s more prefered to use generate WSDL/XSD wizard to extract SOAP envelope. key note ! port number 7080 is the default for listening webservice request.</p>
+
+<p>As you can see, the lines of codes in compute node is tedious and we need to be careful when we write coding</p>
+
+<p><img src="https://s3.amazonaws.com/abjoy/wmb/http_webservice_node/pic1.jpeg" width="800" height="1200"></p>
+
+<p>WebService Consumer with HTTP Request Node</p>
+
+<p>This message flow doesn&rsquo;t do any fancy thing, it just connects to webservice provider above, consumes the data passes over to the compute node. and compute node copies inbound message to outbound terminal without any transformation.</p>
+
+<p><img src="https://s3.amazonaws.com/abjoy/wmb/http_webservice_node/pic2.jpeg" width="800" height="1200"></p>
+
+<p>Testing with SOAPUI</p>
+
+<p>In this example, bank customer tries to login into his bank account and sees his credit and debit information. the first data he enters: username, password are credentail data for webservice request. and detailed information; customer name, checking account and saving account are returned as webservice response data.</p>
+
+<p><img src="https://s3.amazonaws.com/abjoy/wmb/http_webservice_node/pic3.jpeg" width="800" height="1200"></p>
+
+<p><a href="https://s3.amazonaws.com/abjoy/wmb/emailoutputnode_static_configuration/static_emailoutput_node.zip">download source code</a></p>
+
+<script type="text/javascript" src="http://jd.revolvermaps.com/2/4.js?i=30hgo6osd91&amp;m=0&amp;h=160&amp;c=ff00ff&amp;r=40" async="async"></script>
+
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/middleware/blog/2014/07/22/soap-node-vs-http-node/">SOAP Node vs HTTP Node</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-07-22T12:51:00-05:00" pubdate data-updated="true">Jul 22<sup>nd</sup>, 2014</time>
+        
+           | <a href="/middleware/blog/2014/07/22/soap-node-vs-http-node/#disqus_thread"
+             data-disqus-identifier="http://abdulrepo.github.io/middleware/blog/2014/07/22/soap-node-vs-http-node/">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>We can use SOAP nodes with SOAP message domain OR HTTP transport nodes with XMLNSC message domain to implement Web Services. Several advantages exist if we use SOAP nodes:</p>
+
+<ul>
+<li>Support for WS-Addressing, WS-Security and SOAP headers.</li>
+<li>A common SOAP logical tree format, independent of the bitstream format.</li>
+<li>Runtime checking against WSDL.</li>
+<li>Automatic processing of SOAP with Attachments (SwA). (Although the HTTP nodes can process SwA messages, we must use the MIME message domain)</li>
+<li>Automatic processing of Message Transmission Optimization Mechanism (MTOM).</li>
+</ul>
+
+
+<p>Cases where it might be better to use HTTP nodes include:</p>
+
+<ul>
+<li>Message flows that interact with Web services that use different standards, such as REST or XML-RPC. (We don&rsquo;t have a WSDL definition)</li>
+<li>Message flow that never use WS-Addressing, WS-Security, SwA, or MTOM.</li>
+</ul>
+
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/middleware/blog/2014/07/13/working-with-emailoutput-node-static-configuration/">Working With EmailOutput Node Static Configuration</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-07-13T14:36:04-05:00" pubdate data-updated="true">Jul 13<sup>th</sup>, 2014</time>
+        
+           | <a href="/middleware/blog/2014/07/13/working-with-emailoutput-node-static-configuration/#disqus_thread"
+             data-disqus-identifier="http://abdulrepo.github.io/middleware/blog/2014/07/13/working-with-emailoutput-node-static-configuration/">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>We start this serious of discussion with SMTP server. SMTP server is a type of server which is used to relay or send email message to the next or final destination SMTP server. so basically, it accepts email message from client application for example from outlook express or simply throuh telnet and sends to the next hop or remote end SMTP server, which finally the reciver consumes the message from.</p>
+
+<p>To enhance rapid wmb devevelpment I&rsquo;ve introduced here pseudo SMTP server. this server is used as local message browser using local queue where we can browse email sent by email node or any application. and it woudn&rsquo;t send message to actual destination.</p>
+
+<p>To see this in action, download tiny SMTP server application available at: <a href="http://smtp4dev.codeplex.com/downloads/get/269147">download app here</a> and run it.
+Then configure emailoutput node as marked in blue color below:</p>
+
+<p><img src="https://s3.amazonaws.com/abjoy/wmb/emailoutputnode_static_configuration/pic1.jpeg" width="800" height="1200"></p>
+
+<p><img src="https://s3.amazonaws.com/abjoy/wmb/emailoutputnode_static_configuration/pic2.jpeg" width="800" height="1200"></p>
+
+<p>upon deploying the project and excuting the project, since input message tag is not properly close, the test should fail and sends email notification to subscribed admins in the local pseudo queues show below:</p>
+
+<p><img src="https://s3.amazonaws.com/abjoy/wmb/emailoutputnode_static_configuration/pic3.jpeg" width="800" height="1200"></p>
+
+<p><img src="https://s3.amazonaws.com/abjoy/wmb/emailoutputnode_static_configuration/pic4.jpeg" width="800" height="1200"></p>
+
+<p><img src="https://s3.amazonaws.com/abjoy/wmb/emailoutputnode_static_configuration/pic5.jpeg" width="800" height="1200"></p>
+
+<p>click inspect button to see the message</p>
+
+<p><img src="https://s3.amazonaws.com/abjoy/wmb/emailoutputnode_static_configuration/pic6.jpeg" width="800" height="1200"></p>
+
+<p><a href="https://s3.amazonaws.com/abjoy/wmb/http_webservice_node/HttpWebService.zip">download source code</a></p>
+
+<script type="text/javascript" src="http://jd.revolvermaps.com/2/4.js?i=30hgo6osd91&amp;m=0&amp;h=160&amp;c=ff00ff&amp;r=40" async="async"></script>
+
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/middleware/blog/2014/07/09/physical-vs-logical-message/">Physical vs Logical Message</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-07-09T17:42:06-05:00" pubdate data-updated="true">Jul 9<sup>th</sup>, 2014</time>
+        
+           | <a href="/middleware/blog/2014/07/09/physical-vs-logical-message/#disqus_thread"
+             data-disqus-identifier="http://abdulrepo.github.io/middleware/blog/2014/07/09/physical-vs-logical-message/">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>The difference between physical message and logical message is that physical message is something like XML and Cobol copybook or any text files. when physical data arrives at input node for example, input message queue, we have to configure the node property with appropriate parser like XMLNSC. This parser converts physical data to logical data which is understandable by the enterior nodes or embeded languages ESQL &amp; JAVA. Then these language can traverse logical tree message and do transformation as needed.</p>
+
+<p><img src="https://s3.amazonaws.com/abjoy/pictures/mypictures/photo1.jpg" width="800" height="1200"></p>
+
+<p>In our example the physical data is xml file which has account information with person first and last name. and the parser is XMLNSC configured on input queue node. then internally we can retrieve information starting by XMLNSC.Account.fname etc.</p>
+
+<p>This project shows how to transform simple account information to a physical message but with different nodes.</p>
+
+<p><img src="https://s3.amazonaws.com/abjoy/pictures/mypictures/pysical_vs_logical/pic4.jpeg" width="800" height="1200"></p>
+
+<p>on the input node, we need to specify the parser &ldquo;XMLNS&rdquo;</p>
+
+<p><img src="https://s3.amazonaws.com/abjoy/pictures/mypictures/pysical_vs_logical/pic1.jpeg" width="800" height="1200"></p>
+
+<p>This shows logical representation of message as it traverses message flow</p>
+
+<p><img src="https://s3.amazonaws.com/abjoy/pictures/mypictures/pysical_vs_logical/pic2.jpeg" width="800" height="1200"></p>
+
+<p>Finally we get physcial transformed data</p>
+
+<p><img src="https://s3.amazonaws.com/abjoy/pictures/mypictures/pysical_vs_logical/pic3.jpeg" width="800" height="1200"></p>
+
+<p><a href="https://s3.amazonaws.com/abjoy/pictures/mypictures/pysical_vs_logical/AccountInfo.zip">download source code</a></p>
+
+<script type="text/javascript" src="http://jd.revolvermaps.com/2/4.js?i=30hgo6osd91&amp;m=0&amp;h=160&amp;c=ff00ff&amp;r=40" async="async"></script>
+
+
+
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/middleware/blog/2014/07/08/basics-of-message-broker-toolkit/">Basics of Message Broker Toolkit</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-07-08T21:35:12-05:00" pubdate data-updated="true">Jul 8<sup>th</sup>, 2014</time>
+        
+           | <a href="/middleware/blog/2014/07/08/basics-of-message-broker-toolkit/#disqus_thread"
+             data-disqus-identifier="http://abdulrepo.github.io/middleware/blog/2014/07/08/basics-of-message-broker-toolkit/">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><img src="https://s3.amazonaws.com/abjoy/pictures/mypictures/wmbtoolkit.jpeg" width="800" height="1200"></p>
+
+<ol>
+<li><p>This is the side pane: in this pane we can create application, message flow, BAR files, message model, message set and etc</p></li>
+<li><p>Is a section of the toolkit where we can choose different types of nodes to create message flow. for example, compute node, database node, filter node and etc.</p></li>
+<li><p>Content pane: in this pane we build our message flow using nodes links and etc.</p></li>
+<li><p>This pane contains one or more Broker instances, and one or more execution group.</p></li>
+<li><p>In this pane we can set properties for the nodes, we can brows deployment logs and see some troubleshooting informations. test</p></li>
+</ol>
+
+
+<script type="text/javascript" src="http://jd.revolvermaps.com/2/4.js?i=30hgo6osd91&amp;m=0&amp;h=160&amp;c=ff00ff&amp;r=40" async="async"></script>
+
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/middleware/blog/2014/07/08/esql-tips-and-tricks/">ESQL Tips &amp; Tricks</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-07-08T20:38:06-05:00" pubdate data-updated="true">Jul 8<sup>th</sup>, 2014</time>
+        
+           | <a href="/middleware/blog/2014/07/08/esql-tips-and-tricks/#disqus_thread"
+             data-disqus-identifier="http://abdulrepo.github.io/middleware/blog/2014/07/08/esql-tips-and-tricks/">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Coming soon!</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  <div class="pagination">
+    
+    <a href="/middleware/blog/archives">Blog Archives</a>
+    
+  </div>
+</div>
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/middleware/blog/2014/09/23/pub-sub-pattern-in-message-broker/">PUB-SUB Pattern in Message Broker</a>
+      </li>
+    
+      <li class="post">
+        <a href="/middleware/blog/2014/07/23/webservice-develpment-using-http-node/">WebService Develpment Using HTTP Node</a>
+      </li>
+    
+      <li class="post">
+        <a href="/middleware/blog/2014/07/22/soap-node-vs-http-node/">SOAP Node vs HTTP Node</a>
+      </li>
+    
+      <li class="post">
+        <a href="/middleware/blog/2014/07/13/working-with-emailoutput-node-static-configuration/">Working With EmailOutput Node Static Configuration</a>
+      </li>
+    
+      <li class="post">
+        <a href="/middleware/blog/2014/07/09/physical-vs-logical-message/">Physical vs Logical Message</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+
+
+  
+</aside>
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2014 - Abdul @ Middleware -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'httpabdulrepogithubiomiddleware';
+      
+        
+        var disqus_script = 'count.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id; js.async = true;
+  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

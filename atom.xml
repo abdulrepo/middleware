@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Application Integration With IBM ESB]]></title>
+  <link href="http://abdulrepo.github.io/middleware/atom.xml" rel="self"/>
+  <link href="http://abdulrepo.github.io/middleware/"/>
+  <updated>2014-09-23T05:45:56-05:00</updated>
+  <id>http://abdulrepo.github.io/middleware/</id>
+  <author>
+    <name><![CDATA[Abdul @ Middleware]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[PUB-SUB Pattern in Message Broker]]></title>
+    <link href="http://abdulrepo.github.io/middleware/blog/2014/09/23/pub-sub-pattern-in-message-broker/"/>
+    <updated>2014-09-23T05:19:42-05:00</updated>
+    <id>http://abdulrepo.github.io/middleware/blog/2014/09/23/pub-sub-pattern-in-message-broker</id>
+    <content type="html"><![CDATA[<p>Scenarios where to use pub-sub pattern</p>
+
+<pre><code>* Where multiple receivers depend on same senders
+* Scnarios with large number of senders and receivers
+* Frequent and dynamic changes between senders and receivers
+</code></pre>
+
+<p>Components needed to build pub-sub flow</p>
+
+<p>Publisher flow: this consists of any input node with publisher string and &lsquo;Publisher&rsquo; keyword specified in transformation nodes or on MQ input node if MQ is an input node and publisher node</p>
+
+<p>Publisher and subscriber definition on MQ explorer</p>
+
+<p>Pubscriber flow with MQ input node which is a must have</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[WebService Develpment Using HTTP Node]]></title>
+    <link href="http://abdulrepo.github.io/middleware/blog/2014/07/23/webservice-develpment-using-http-node/"/>
+    <updated>2014-07-23T00:16:13-05:00</updated>
+    <id>http://abdulrepo.github.io/middleware/blog/2014/07/23/webservice-develpment-using-http-node</id>
+    <content type="html"><![CDATA[<p>WebService Provider with HTTP Input Node</p>
+
+<p>I&rsquo;ll try to show webservice provider development using HTTP node. in this example I&rsquo;ve tried to expose webservice using HTTP node. since we&rsquo;ve to construct(write tedious codes) for multiple namespaces for the envelope and subsequent nodes, it&rsquo;s more prefered to use generate WSDL/XSD wizard to extract SOAP envelope. key note ! port number 7080 is the default for listening webservice request.</p>
+
+<p>As you can see, the lines of codes in compute node is tedious and we need to be careful when we write coding</p>
+
+<p><img src="https://s3.amazonaws.com/abjoy/wmb/http_webservice_node/pic1.jpeg" width="800" height="1200"></p>
+
+<p>WebService Consumer with HTTP Request Node</p>
+
+<p>This message flow doesn&rsquo;t do any fancy thing, it just connects to webservice provider above, consumes the data passes over to the compute node. and compute node copies inbound message to outbound terminal without any transformation.</p>
+
+<p><img src="https://s3.amazonaws.com/abjoy/wmb/http_webservice_node/pic2.jpeg" width="800" height="1200"></p>
+
+<p>Testing with SOAPUI</p>
+
+<p>In this example, bank customer tries to login into his bank account and sees his credit and debit information. the first data he enters: username, password are credentail data for webservice request. and detailed information; customer name, checking account and saving account are returned as webservice response data.</p>
+
+<p><img src="https://s3.amazonaws.com/abjoy/wmb/http_webservice_node/pic3.jpeg" width="800" height="1200"></p>
+
+<p><a href="https://s3.amazonaws.com/abjoy/wmb/emailoutputnode_static_configuration/static_emailoutput_node.zip">download source code</a></p>
+
+<script type="text/javascript" src="http://jd.revolvermaps.com/2/4.js?i=30hgo6osd91&amp;m=0&amp;h=160&amp;c=ff00ff&amp;r=40" async="async"></script>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[SOAP Node vs HTTP Node]]></title>
+    <link href="http://abdulrepo.github.io/middleware/blog/2014/07/22/soap-node-vs-http-node/"/>
+    <updated>2014-07-22T12:51:00-05:00</updated>
+    <id>http://abdulrepo.github.io/middleware/blog/2014/07/22/soap-node-vs-http-node</id>
+    <content type="html"><![CDATA[<p>We can use SOAP nodes with SOAP message domain OR HTTP transport nodes with XMLNSC message domain to implement Web Services. Several advantages exist if we use SOAP nodes:</p>
+
+<ul>
+<li>Support for WS-Addressing, WS-Security and SOAP headers.</li>
+<li>A common SOAP logical tree format, independent of the bitstream format.</li>
+<li>Runtime checking against WSDL.</li>
+<li>Automatic processing of SOAP with Attachments (SwA). (Although the HTTP nodes can process SwA messages, we must use the MIME message domain)</li>
+<li>Automatic processing of Message Transmission Optimization Mechanism (MTOM).</li>
+</ul>
+
+
+<p>Cases where it might be better to use HTTP nodes include:</p>
+
+<ul>
+<li>Message flows that interact with Web services that use different standards, such as REST or XML-RPC. (We don&rsquo;t have a WSDL definition)</li>
+<li>Message flow that never use WS-Addressing, WS-Security, SwA, or MTOM.</li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Working With EmailOutput Node Static Configuration]]></title>
+    <link href="http://abdulrepo.github.io/middleware/blog/2014/07/13/working-with-emailoutput-node-static-configuration/"/>
+    <updated>2014-07-13T14:36:04-05:00</updated>
+    <id>http://abdulrepo.github.io/middleware/blog/2014/07/13/working-with-emailoutput-node-static-configuration</id>
+    <content type="html"><![CDATA[<p>We start this serious of discussion with SMTP server. SMTP server is a type of server which is used to relay or send email message to the next or final destination SMTP server. so basically, it accepts email message from client application for example from outlook express or simply throuh telnet and sends to the next hop or remote end SMTP server, which finally the reciver consumes the message from.</p>
+
+<p>To enhance rapid wmb devevelpment I&rsquo;ve introduced here pseudo SMTP server. this server is used as local message browser using local queue where we can browse email sent by email node or any application. and it woudn&rsquo;t send message to actual destination.</p>
+
+<p>To see this in action, download tiny SMTP server application available at: <a href="http://smtp4dev.codeplex.com/downloads/get/269147">download app here</a> and run it.
+Then configure emailoutput node as marked in blue color below:</p>
+
+<p><img src="https://s3.amazonaws.com/abjoy/wmb/emailoutputnode_static_configuration/pic1.jpeg" width="800" height="1200"></p>
+
+<p><img src="https://s3.amazonaws.com/abjoy/wmb/emailoutputnode_static_configuration/pic2.jpeg" width="800" height="1200"></p>
+
+<p>upon deploying the project and excuting the project, since input message tag is not properly close, the test should fail and sends email notification to subscribed admins in the local pseudo queues show below:</p>
+
+<p><img src="https://s3.amazonaws.com/abjoy/wmb/emailoutputnode_static_configuration/pic3.jpeg" width="800" height="1200"></p>
+
+<p><img src="https://s3.amazonaws.com/abjoy/wmb/emailoutputnode_static_configuration/pic4.jpeg" width="800" height="1200"></p>
+
+<p><img src="https://s3.amazonaws.com/abjoy/wmb/emailoutputnode_static_configuration/pic5.jpeg" width="800" height="1200"></p>
+
+<p>click inspect button to see the message</p>
+
+<p><img src="https://s3.amazonaws.com/abjoy/wmb/emailoutputnode_static_configuration/pic6.jpeg" width="800" height="1200"></p>
+
+<p><a href="https://s3.amazonaws.com/abjoy/wmb/http_webservice_node/HttpWebService.zip">download source code</a></p>
+
+<script type="text/javascript" src="http://jd.revolvermaps.com/2/4.js?i=30hgo6osd91&amp;m=0&amp;h=160&amp;c=ff00ff&amp;r=40" async="async"></script>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Physical vs Logical Message]]></title>
+    <link href="http://abdulrepo.github.io/middleware/blog/2014/07/09/physical-vs-logical-message/"/>
+    <updated>2014-07-09T17:42:06-05:00</updated>
+    <id>http://abdulrepo.github.io/middleware/blog/2014/07/09/physical-vs-logical-message</id>
+    <content type="html"><![CDATA[<p>The difference between physical message and logical message is that physical message is something like XML and Cobol copybook or any text files. when physical data arrives at input node for example, input message queue, we have to configure the node property with appropriate parser like XMLNSC. This parser converts physical data to logical data which is understandable by the enterior nodes or embeded languages ESQL &amp; JAVA. Then these language can traverse logical tree message and do transformation as needed.</p>
+
+<p><img src="https://s3.amazonaws.com/abjoy/pictures/mypictures/photo1.jpg" width="800" height="1200"></p>
+
+<p>In our example the physical data is xml file which has account information with person first and last name. and the parser is XMLNSC configured on input queue node. then internally we can retrieve information starting by XMLNSC.Account.fname etc.</p>
+
+<p>This project shows how to transform simple account information to a physical message but with different nodes.</p>
+
+<p><img src="https://s3.amazonaws.com/abjoy/pictures/mypictures/pysical_vs_logical/pic4.jpeg" width="800" height="1200"></p>
+
+<p>on the input node, we need to specify the parser &ldquo;XMLNS&rdquo;</p>
+
+<p><img src="https://s3.amazonaws.com/abjoy/pictures/mypictures/pysical_vs_logical/pic1.jpeg" width="800" height="1200"></p>
+
+<p>This shows logical representation of message as it traverses message flow</p>
+
+<p><img src="https://s3.amazonaws.com/abjoy/pictures/mypictures/pysical_vs_logical/pic2.jpeg" width="800" height="1200"></p>
+
+<p>Finally we get physcial transformed data</p>
+
+<p><img src="https://s3.amazonaws.com/abjoy/pictures/mypictures/pysical_vs_logical/pic3.jpeg" width="800" height="1200"></p>
+
+<p><a href="https://s3.amazonaws.com/abjoy/pictures/mypictures/pysical_vs_logical/AccountInfo.zip">download source code</a></p>
+
+<script type="text/javascript" src="http://jd.revolvermaps.com/2/4.js?i=30hgo6osd91&amp;m=0&amp;h=160&amp;c=ff00ff&amp;r=40" async="async"></script>
+
+
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Basics of Message Broker Toolkit]]></title>
+    <link href="http://abdulrepo.github.io/middleware/blog/2014/07/08/basics-of-message-broker-toolkit/"/>
+    <updated>2014-07-08T21:35:12-05:00</updated>
+    <id>http://abdulrepo.github.io/middleware/blog/2014/07/08/basics-of-message-broker-toolkit</id>
+    <content type="html"><![CDATA[<p><img src="https://s3.amazonaws.com/abjoy/pictures/mypictures/wmbtoolkit.jpeg" width="800" height="1200"></p>
+
+<ol>
+<li><p>This is the side pane: in this pane we can create application, message flow, BAR files, message model, message set and etc</p></li>
+<li><p>Is a section of the toolkit where we can choose different types of nodes to create message flow. for example, compute node, database node, filter node and etc.</p></li>
+<li><p>Content pane: in this pane we build our message flow using nodes links and etc.</p></li>
+<li><p>This pane contains one or more Broker instances, and one or more execution group.</p></li>
+<li><p>In this pane we can set properties for the nodes, we can brows deployment logs and see some troubleshooting informations. test</p></li>
+</ol>
+
+
+<script type="text/javascript" src="http://jd.revolvermaps.com/2/4.js?i=30hgo6osd91&amp;m=0&amp;h=160&amp;c=ff00ff&amp;r=40" async="async"></script>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[ESQL Tips &amp; Tricks]]></title>
+    <link href="http://abdulrepo.github.io/middleware/blog/2014/07/08/esql-tips-and-tricks/"/>
+    <updated>2014-07-08T20:38:06-05:00</updated>
+    <id>http://abdulrepo.github.io/middleware/blog/2014/07/08/esql-tips-and-tricks</id>
+    <content type="html"><![CDATA[<p>Coming soon!</p>
+]]></content>
+  </entry>
+  
+</feed>
