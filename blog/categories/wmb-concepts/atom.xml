@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Wmb_concepts | Application Integration With IBM ESB]]></title>
   <link href="http://abdulrepo.github.io/middleware/blog/categories/wmb-concepts/atom.xml" rel="self"/>
   <link href="http://abdulrepo.github.io/middleware/"/>
-  <updated>2014-09-23T05:41:27-05:00</updated>
+  <updated>2014-09-23T05:44:21-05:00</updated>
   <id>http://abdulrepo.github.io/middleware/</id>
   <author>
     <name><![CDATA[Abdul @ Middleware]]></name>
@@ -20,25 +20,25 @@
     <id>http://abdulrepo.github.io/middleware/blog/2014/07/09/physical-vs-logical-message</id>
     <content type="html"><![CDATA[<p>The difference between physical message and logical message is that physical message is something like XML and Cobol copybook or any text files. when physical data arrives at input node for example, input message queue, we have to configure the node property with appropriate parser like XMLNSC. This parser converts physical data to logical data which is understandable by the enterior nodes or embeded languages ESQL &amp; JAVA. Then these language can traverse logical tree message and do transformation as needed.</p>
 
-<p><img class="<a" src="href="https://s3.amazonaws.com/abjoy/pictures/mypictures/photo1.jpg">https://s3.amazonaws.com/abjoy/pictures/mypictures/photo1.jpg</a>" width="800" height="1200"></p>
+<p>{% img <a href="https://s3.amazonaws.com/abjoy/pictures/mypictures/photo1.jpg">https://s3.amazonaws.com/abjoy/pictures/mypictures/photo1.jpg</a> 800 1200 %}</p>
 
 <p>In our example the physical data is xml file which has account information with person first and last name. and the parser is XMLNSC configured on input queue node. then internally we can retrieve information starting by XMLNSC.Account.fname etc.</p>
 
 <p>This project shows how to transform simple account information to a physical message but with different nodes.</p>
 
-<p><img class="<a" src="href="https://s3.amazonaws.com/abjoy/pictures/mypictures/pysical_vs_logical/pic4.jpeg">https://s3.amazonaws.com/abjoy/pictures/mypictures/pysical_vs_logical/pic4.jpeg</a>" width="800" height="1200"></p>
+<p>{% img <a href="https://s3.amazonaws.com/abjoy/pictures/mypictures/pysical_vs_logical/pic4.jpeg">https://s3.amazonaws.com/abjoy/pictures/mypictures/pysical_vs_logical/pic4.jpeg</a> 800 1200 %}</p>
 
 <p>on the input node, we need to specify the parser &ldquo;XMLNS&rdquo;</p>
 
-<p><img class="<a" src="href="https://s3.amazonaws.com/abjoy/pictures/mypictures/pysical_vs_logical/pic1.jpeg">https://s3.amazonaws.com/abjoy/pictures/mypictures/pysical_vs_logical/pic1.jpeg</a>" width="800" height="1200"></p>
+<p>{% img <a href="https://s3.amazonaws.com/abjoy/pictures/mypictures/pysical_vs_logical/pic1.jpeg">https://s3.amazonaws.com/abjoy/pictures/mypictures/pysical_vs_logical/pic1.jpeg</a> 800 1200 %}</p>
 
 <p>This shows logical representation of message as it traverses message flow</p>
 
-<p><img class="<a" src="href="https://s3.amazonaws.com/abjoy/pictures/mypictures/pysical_vs_logical/pic2.jpeg">https://s3.amazonaws.com/abjoy/pictures/mypictures/pysical_vs_logical/pic2.jpeg</a>" width="800" height="1200"></p>
+<p>{% img <a href="https://s3.amazonaws.com/abjoy/pictures/mypictures/pysical_vs_logical/pic2.jpeg">https://s3.amazonaws.com/abjoy/pictures/mypictures/pysical_vs_logical/pic2.jpeg</a> 800 1200 %}</p>
 
 <p>Finally we get physcial transformed data</p>
 
-<p><img class="<a" src="href="https://s3.amazonaws.com/abjoy/pictures/mypictures/pysical_vs_logical/pic3.jpeg">https://s3.amazonaws.com/abjoy/pictures/mypictures/pysical_vs_logical/pic3.jpeg</a>" width="800" height="1200"></p>
+<p>{% img <a href="https://s3.amazonaws.com/abjoy/pictures/mypictures/pysical_vs_logical/pic3.jpeg">https://s3.amazonaws.com/abjoy/pictures/mypictures/pysical_vs_logical/pic3.jpeg</a> 800 1200 %}</p>
 
 <p><a href="https://s3.amazonaws.com/abjoy/pictures/mypictures/pysical_vs_logical/AccountInfo.zip">download source code</a></p>
 
