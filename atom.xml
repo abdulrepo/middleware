@@ -4,7 +4,7 @@
   <title><![CDATA[Application Integration With IBM ESB]]></title>
   <link href="http://abdulrepo.github.io/middleware/atom.xml" rel="self"/>
   <link href="http://abdulrepo.github.io/middleware/"/>
-  <updated>2014-09-23T05:40:30-05:00</updated>
+  <updated>2014-09-23T05:41:27-05:00</updated>
   <id>http://abdulrepo.github.io/middleware/</id>
   <author>
     <name><![CDATA[Abdul @ Middleware]]></name>
@@ -20,11 +20,10 @@
     <id>http://abdulrepo.github.io/middleware/blog/2014/09/23/pub-sub-pattern-in-message-broker</id>
     <content type="html"><![CDATA[<p>Scenarios where to use pub-sub pattern</p>
 
-<p>Where multiple receivers depend on same senders</p>
-
 <ul>
-<li><p>Scnarios with large number of senders and receivers</p></li>
-<li><p>Frequent and dynamic changes between senders and receivers</p></li>
+<li>Where multiple receivers depend on same senders</li>
+<li>Scnarios with large number of senders and receivers</li>
+<li>Frequent and dynamic changes between senders and receivers</li>
 </ul>
 
 
