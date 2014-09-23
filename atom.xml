@@ -4,7 +4,7 @@
   <title><![CDATA[Application Integration With IBM ESB]]></title>
   <link href="http://abdulrepo.github.io/middleware/atom.xml" rel="self"/>
   <link href="http://abdulrepo.github.io/middleware/"/>
-  <updated>2014-07-23T11:10:44-04:00</updated>
+  <updated>2014-09-23T05:16:02-05:00</updated>
   <id>http://abdulrepo.github.io/middleware/</id>
   <author>
     <name><![CDATA[Abdul @ Middleware]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[WebService Develpment Using HTTP Node]]></title>
     <link href="http://abdulrepo.github.io/middleware/blog/2014/07/23/webservice-develpment-using-http-node/"/>
-    <updated>2014-07-23T01:16:13-04:00</updated>
+    <updated>2014-07-23T00:16:13-05:00</updated>
     <id>http://abdulrepo.github.io/middleware/blog/2014/07/23/webservice-develpment-using-http-node</id>
     <content type="html"><![CDATA[<p>WebService Provider with HTTP Input Node</p>
 
@@ -48,7 +48,7 @@
   <entry>
     <title type="html"><![CDATA[SOAP Node vs HTTP Node]]></title>
     <link href="http://abdulrepo.github.io/middleware/blog/2014/07/22/soap-node-vs-http-node/"/>
-    <updated>2014-07-22T13:51:00-04:00</updated>
+    <updated>2014-07-22T12:51:00-05:00</updated>
     <id>http://abdulrepo.github.io/middleware/blog/2014/07/22/soap-node-vs-http-node</id>
     <content type="html"><![CDATA[<p>We can use SOAP nodes with SOAP message domain OR HTTP transport nodes with XMLNSC message domain to implement Web Services. Several advantages exist if we use SOAP nodes:</p>
 
@@ -74,7 +74,7 @@
   <entry>
     <title type="html"><![CDATA[Working With EmailOutput Node Static Configuration]]></title>
     <link href="http://abdulrepo.github.io/middleware/blog/2014/07/13/working-with-emailoutput-node-static-configuration/"/>
-    <updated>2014-07-13T15:36:04-04:00</updated>
+    <updated>2014-07-13T14:36:04-05:00</updated>
     <id>http://abdulrepo.github.io/middleware/blog/2014/07/13/working-with-emailoutput-node-static-configuration</id>
     <content type="html"><![CDATA[<p>We start this serious of discussion with SMTP server. SMTP server is a type of server which is used to relay or send email message to the next or final destination SMTP server. so basically, it accepts email message from client application for example from outlook express or simply throuh telnet and sends to the next hop or remote end SMTP server, which finally the reciver consumes the message from.</p>
 
@@ -109,7 +109,7 @@ Then configure emailoutput node as marked in blue color below:</p>
   <entry>
     <title type="html"><![CDATA[Physical vs Logical Message]]></title>
     <link href="http://abdulrepo.github.io/middleware/blog/2014/07/09/physical-vs-logical-message/"/>
-    <updated>2014-07-09T18:42:06-04:00</updated>
+    <updated>2014-07-09T17:42:06-05:00</updated>
     <id>http://abdulrepo.github.io/middleware/blog/2014/07/09/physical-vs-logical-message</id>
     <content type="html"><![CDATA[<p>The difference between physical message and logical message is that physical message is something like XML and Cobol copybook or any text files. when physical data arrives at input node for example, input message queue, we have to configure the node property with appropriate parser like XMLNSC. This parser converts physical data to logical data which is understandable by the enterior nodes or embeded languages ESQL &amp; JAVA. Then these language can traverse logical tree message and do transformation as needed.</p>
 
@@ -145,7 +145,7 @@ Then configure emailoutput node as marked in blue color below:</p>
   <entry>
     <title type="html"><![CDATA[Basics of Message Broker Toolkit]]></title>
     <link href="http://abdulrepo.github.io/middleware/blog/2014/07/08/basics-of-message-broker-toolkit/"/>
-    <updated>2014-07-08T22:35:12-04:00</updated>
+    <updated>2014-07-08T21:35:12-05:00</updated>
     <id>http://abdulrepo.github.io/middleware/blog/2014/07/08/basics-of-message-broker-toolkit</id>
     <content type="html"><![CDATA[<p><img src="https://s3.amazonaws.com/abjoy/pictures/mypictures/wmbtoolkit.jpeg" width="800" height="1200"></p>
 
@@ -166,7 +166,7 @@ Then configure emailoutput node as marked in blue color below:</p>
   <entry>
     <title type="html"><![CDATA[ESQL Tips &amp; Tricks]]></title>
     <link href="http://abdulrepo.github.io/middleware/blog/2014/07/08/esql-tips-and-tricks/"/>
-    <updated>2014-07-08T21:38:06-04:00</updated>
+    <updated>2014-07-08T20:38:06-05:00</updated>
     <id>http://abdulrepo.github.io/middleware/blog/2014/07/08/esql-tips-and-tricks</id>
     <content type="html"><![CDATA[<p>Coming soon!</p>
 ]]></content>

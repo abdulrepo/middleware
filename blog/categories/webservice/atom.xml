@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Webservice, | Application Integration With IBM ESB]]></title>
   <link href="http://abdulrepo.github.io/middleware/blog/categories/webservice/atom.xml" rel="self"/>
   <link href="http://abdulrepo.github.io/middleware/"/>
-  <updated>2014-07-23T11:10:44-04:00</updated>
+  <updated>2014-09-23T05:16:02-05:00</updated>
   <id>http://abdulrepo.github.io/middleware/</id>
   <author>
     <name><![CDATA[Abdul @ Middleware]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[WebService Develpment Using HTTP Node]]></title>
     <link href="http://abdulrepo.github.io/middleware/blog/2014/07/23/webservice-develpment-using-http-node/"/>
-    <updated>2014-07-23T01:16:13-04:00</updated>
+    <updated>2014-07-23T00:16:13-05:00</updated>
     <id>http://abdulrepo.github.io/middleware/blog/2014/07/23/webservice-develpment-using-http-node</id>
     <content type="html"><![CDATA[<p>WebService Provider with HTTP Input Node</p>
 
