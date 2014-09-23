@@ -4,7 +4,7 @@
   <title><![CDATA[Application Integration With IBM ESB]]></title>
   <link href="http://abdulrepo.github.io/middleware/atom.xml" rel="self"/>
   <link href="http://abdulrepo.github.io/middleware/"/>
-  <updated>2014-09-23T05:20:03-05:00</updated>
+  <updated>2014-09-23T05:32:41-05:00</updated>
   <id>http://abdulrepo.github.io/middleware/</id>
   <author>
     <name><![CDATA[Abdul @ Middleware]]></name>
@@ -18,7 +18,19 @@
     <link href="http://abdulrepo.github.io/middleware/blog/2014/09/23/pub-sub-pattern-in-message-broker/"/>
     <updated>2014-09-23T05:19:42-05:00</updated>
     <id>http://abdulrepo.github.io/middleware/blog/2014/09/23/pub-sub-pattern-in-message-broker</id>
-    <content type="html"><![CDATA[
+    <content type="html"><![CDATA[<p>Scenarios where to use pub-sub pattern</p>
+
+<p>where multiple receivers depend on same senders
+scnarios with large number of senders and receivers
+frequent and dynamic changes between senders and receivers</p>
+
+<p>components needed to build pub-sub flow</p>
+
+<p>publisher flow: this consists of any input node with publisher string and &lsquo;Publisher&rsquo; keyword specified in transformation nodes or on MQ input node if MQ is an input node and publisher node</p>
+
+<p>publisher and subscriber definition on MQ explorer</p>
+
+<p>subscriber flow with MQ input node which is a must have</p>
 ]]></content>
   </entry>
   
