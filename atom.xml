@@ -4,7 +4,7 @@
   <title><![CDATA[Application Integration With IBM ESB]]></title>
   <link href="http://abdulrepo.github.io/middleware/atom.xml" rel="self"/>
   <link href="http://abdulrepo.github.io/middleware/"/>
-  <updated>2014-09-23T05:38:19-05:00</updated>
+  <updated>2014-09-23T05:39:12-05:00</updated>
   <id>http://abdulrepo.github.io/middleware/</id>
   <author>
     <name><![CDATA[Abdul @ Middleware]]></name>
@@ -22,9 +22,11 @@
 
 <p>Where multiple receivers depend on same senders</p>
 
-<p>*Scnarios with large number of senders and receivers</p>
+<ul>
+<li><p>Scnarios with large number of senders and receivers</p></li>
+<li><p>Frequent and dynamic changes between senders and receivers</p></li>
+</ul>
 
-<p>*Frequent and dynamic changes between senders and receivers</p>
 
 <p>Components needed to build pub-sub flow</p>
 
